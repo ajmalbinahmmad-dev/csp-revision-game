@@ -1,9 +1,7 @@
-CSP Revision Game PWA v2
+CSP Revision Game PWA v2 FIXED
 
-GitHub Pages:
-1. Create a repository.
-2. Upload ALL files in this folder to the repository root.
-3. Settings > Pages > Deploy from a branch > main > /(root).
-4. Open the GitHub Pages URL on your phone and choose Add to Home screen / Install app.
+IMPORTANT: This package replaces the earlier v2 build. The earlier build had a Study Material parser alignment bug that could attach the next question's options or a different answer/explanation.
 
-Version 2 uses Study Material as the priority source (~70% of selected questions per domain when available), with Question Bank as secondary. Normal games exclude calculation-tagged questions.
+This fixed build uses a conservative extraction rule: ambiguous OCR Study Material questions are excluded instead of guessed. Study Material remains prioritized in game selection, with Question Bank as secondary source.
+
+Upload the CONTENTS of this folder to the root of the GitHub Pages repository.

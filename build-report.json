@@ -1,46 +1,39 @@
 {
   "study": {
     "1": {
-      "parsed_questions": 147,
-      "source_expected_questions": 169,
-      "answers_linked": 145,
-      "eligible_non_math": 145
+      "strictly_validated_questions": 124,
+      "eligible_non_math": 124,
+      "source_total_question_count": 169
     },
     "2": {
-      "parsed_questions": 157,
-      "source_expected_questions": 257,
-      "answers_linked": 151,
-      "eligible_non_math": 132
+      "strictly_validated_questions": 96,
+      "eligible_non_math": 85,
+      "source_total_question_count": 257
     },
     "3": {
-      "parsed_questions": 40,
-      "source_expected_questions": 42,
-      "answers_linked": 40,
-      "eligible_non_math": 38
+      "strictly_validated_questions": 32,
+      "eligible_non_math": 31,
+      "source_total_question_count": 42
     },
     "4": {
-      "parsed_questions": 75,
-      "source_expected_questions": 99,
-      "answers_linked": 74,
-      "eligible_non_math": 67
+      "strictly_validated_questions": 64,
+      "eligible_non_math": 57,
+      "source_total_question_count": 99
     },
     "5": {
-      "parsed_questions": 37,
-      "source_expected_questions": 42,
-      "answers_linked": 36,
-      "eligible_non_math": 35
+      "strictly_validated_questions": 36,
+      "eligible_non_math": 36,
+      "source_total_question_count": 42
     },
     "6": {
-      "parsed_questions": 94,
-      "source_expected_questions": 140,
-      "answers_linked": 90,
-      "eligible_non_math": 67
+      "strictly_validated_questions": 15,
+      "eligible_non_math": 7,
+      "source_total_question_count": 140
     },
     "7": {
-      "parsed_questions": 58,
-      "source_expected_questions": 58,
-      "answers_linked": 58,
-      "eligible_non_math": 58
+      "strictly_validated_questions": 57,
+      "eligible_non_math": 57,
+      "source_total_question_count": 58
     }
   },
   "question_bank": {
@@ -52,58 +45,34 @@
     "6": 77,
     "7": 62
   },
-  "warnings": [],
-  "final_database": {
-    "total": 2213,
-    "eligible_non_math": 1724,
-    "by_domain": {
-      "1": {
-        "total": 733,
-        "study": 147,
-        "qb": 586,
-        "eligible": 549
+  "validation": {
+    "eligible_by_domain": {
+      "1": 528,
+      "2": 409,
+      "3": 112,
+      "4": 206,
+      "5": 155,
+      "6": 56,
+      "7": 113
+    },
+    "enough_for_normal_game": true,
+    "unique_ids": true,
+    "known_bad_v2_examples_removed_or_corrected": {
+      "D2_LWDI": {
+        "answer": "D",
+        "explanation": "LWDI is an acronym for statement (d)."
       },
-      "2": {
-        "total": 556,
-        "study": 157,
-        "qb": 399,
-        "eligible": 456
-      },
-      "3": {
-        "total": 155,
-        "study": 40,
-        "qb": 115,
-        "eligible": 119
-      },
-      "4": {
-        "total": 267,
-        "study": 75,
-        "qb": 192,
-        "eligible": 216
-      },
-      "5": {
-        "total": 211,
-        "study": 37,
-        "qb": 174,
-        "eligible": 154
-      },
-      "6": {
-        "total": 171,
-        "study": 94,
-        "qb": 77,
-        "eligible": 116
-      },
-      "7": {
-        "total": 120,
-        "study": 58,
-        "qb": 62,
-        "eligible": 114
-      }
+      "D1_illumination": "excluded_due_to_OCR_ambiguity"
     }
   },
-  "game_rule": "50 questions: D1/D2 alternate 13+12 and 12+13; D3-D7 5 each; within each domain about 70% Study Material and 30% Question Bank when available.",
-  "validation": {
-    "all_domains_have_enough_eligible": true,
-    "unique_ids": true
+  "notes": [
+    "Study Material extraction is conservative: only questions with a clean four-option sequence and a reliably aligned answer marker are included. Ambiguous OCR questions are excluded rather than guessed.",
+    "Study Material remains selection priority in the app; Question Bank is secondary."
+  ],
+  "final_database": {
+    "total": 2029,
+    "study": 424,
+    "question_bank": 1605,
+    "eligible_non_math": 1579
   }
 }
